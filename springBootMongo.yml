@@ -1,5 +1,7 @@
-apiVersion: v1
-kind: ReplicationController
+#apiVersion: v1
+#kind: ReplicationController
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
   labels:
     name: springboot
@@ -36,8 +38,10 @@ spec:
   clusterIP: None
 ---
 # Mongo host path rc
-apiVersion: v1
-kind: ReplicationController
+#apiVersion: v1
+#kind: ReplicationController
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
   labels:
     name: mongo
