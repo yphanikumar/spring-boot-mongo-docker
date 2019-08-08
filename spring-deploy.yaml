@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: phanikumary1995/test-app
+        image: phanikumary1995/test-app-${BUILD_NUMBER}
 #        image: nginx
         imagePullPolicy: Always
         ports:
