@@ -1,0 +1,18 @@
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://kubernetes.default.svc.cluster.local
+  name: k8s
+contexts:
+- context:
+    cluster: k8s
+    user: cluster-admin
+  name: k8s
+current-context: k8s
+kind: Config
+preferences: {}
+users:
+- name: cluster-admin
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJqZW5raW5zLXRva2VuLTd4ZDhqIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImplbmtpbnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI3MDZhMWU1MS1iOWZhLTExZTktODc2MS0wMjA0Y2M5NDM1YTIiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06amVua2lucyJ9.iYtJNixg4daFlZy-ITgTBxF5wy79R442leGJuI6tIJbehajMbXg1rl5nhC6A0sKir9JnQ3zRSRZ-zxXZaZxa9N61HdLdFzyBvB8SCEEyTnbRF4NkfxCm-ZbH8lqSmq0dsYuvr8qqi9zHxp1BzHRKiS4mxyzpk3Ro6FUZm-1Q4bl5vYsfWQXEJRSuS2JCtlkv-gmzusSDmIxSGgSkw3YAp8-Soin6UL4fAT3QW0WTcZCo3s3WCwjV4DUBDdN06hkZsLM_j7eHMDm5NVEKGOim2dtZoCLNhk3EkJXVEBYSzNBATpvzWJtDvy3MzjtoHm7uh9XuCmiNY1eqiXAfMT5pfg
